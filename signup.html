@@ -1,0 +1,479 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <title>CODEWEBLO</title>
+    <!-- Favicone  -->
+    <link rel="shortcut icon" href="assets/image/logo/favicon.png">
+    <!-- Bootstrap CSS  -->
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/bootstrap.min.css">
+    <!-- costum css  -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/theme.css">
+    <!-- font awesome kit -->
+    <script src="assets/js/fontawesomekit.js" crossorigin="anonymous"></script>
+    <!-- jQuery link  -->
+    <script src="assets/js/jquery.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/select2.js"></script>
+    <link rel="stylesheet" href="assets/css/rangeSlider.css">
+</head>
+
+<body id="fadein">
+    <header class="navbar fixed-top navbar-expand-lg p-lg-0">
+        <div class="container">
+            <!-- logo  -->
+            <div class="d-flex">
+                <a href="index.html" class="navbar-brand m-0 p-0 rounded-3">
+                    <img class="logo p-1 rounded" style="max-width: 140px; max-height: 50px;"
+                        src="assets/image/logo/logo.png" alt="logo">
+                </a>
+            </div>
+            <!-- toggle button  -->
+            <button class="navbar-toggler rounded-1" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars navbar-toggler"></i>
+            </button>
+            <!-- nav items  -->
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <!-- left  -->
+                <div class="nav-item--left ms-lg-5">
+                    <ul class="header_menu navbar-nav">
+                        <li> <a class="nav-link" href="flights.html">Flights</a></li>
+                        <li> <a class="nav-link" href="#">Hotels</a></li>
+                        <li> <a class="nav-link" href="#">Tours</a></li>
+                        <li> <a class="nav-link" href="#">Cars</a></li>
+                        <li> <a class="nav-link" href="#">Blogs</a></li>
+                    </ul>
+                </div>
+                <!-- right  -->
+                <div class="nav-item--right" role="search">
+                    <ul class="navbar-nav gap-2 me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle btn ps-3 p-0 py-2 px-0 text-center d-flex align-items-center justify-content-center gap-0"
+                                href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="mx-2" style="width:18px" src="assets/image/flags/us.svg" alt="flag">
+                                <strong class="h6 m-0 header_options">
+                                    English </strong>
+                                <svg class="mx-1" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                    viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M6 9l6 6 6-6" />
+                                </svg>
+                            </a>
+                            <ul class="dropdown-menu rounded-1">
+                                <li><a class="dropdown-item d-flex gap-3" href="#"><img style="width:18px"
+                                            src="assets/image/flags/us.svg" alt="flag">
+                                        </i><span>English</span></a></li>
+                                <li><a class="dropdown-item d-flex gap-3" href="#"><img style="width:18px"
+                                            src="assets/image/flags/sa.svg" alt="flag">
+                                        </i><span>Arabic</span></a></li>
+                                <li><a class="dropdown-item d-flex gap-3" href="#"><img style="width:18px"
+                                            src="assets/image/flags/tr.svg" alt="flag">
+                                        </i><span>Turkish</span></a></li>
+                                <li><a class="dropdown-item d-flex gap-3" href="#"><img style="width:18px"
+                                            src="assets/image/flags/ru.svg" alt="flag">
+                                        </i><span>Russian</span></a></li>
+                                <li><a class="dropdown-item d-flex gap-3" href="#"><img style="width:18px"
+                                            src="assets/image/flags/fr.svg" alt="flag">
+                                        </i><span>French</span></a></li>
+                                <li><a class="dropdown-item d-flex gap-3" href="#"><img style="width:18px"
+                                            src="assets/image/flags/cn.svg" alt="flag">
+                                        </i><span>Chinese</span></a></li>
+                                <li><a class="dropdown-item d-flex gap-3" href="#"><img style="width:18px"
+                                            src="assets/image/flags/de.svg" alt="flag">
+                                        </i><span>Germany</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle btn px-0 ps-3 text-center d-flex align-items-center justify-content-center gap-1"
+                                href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <strong class="h6 m-0 header_options">
+                                    USD </strong>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                    fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M6 9l6 6 6-6" />
+                                </svg>
+                            </a>
+                            <ul class="dropdown-menu rounded-1">
+                                <li><a class="dropdown-item" href="#">
+                                        <img class="mx-2" style="width:18px" src="assets/image/flags/us.svg" alt="flag">
+                                        <span><strong>USD</strong></span>
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <img class="mx-2" style="width:18px" src="assets/image/flags/gb.svg" alt="flag">
+                                        <span><strong>GBP</strong></span>
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <img class="mx-2" style="width:18px" src="assets/image/flags/sa.svg" alt="flag">
+                                        <span><strong>SAR</strong></span>
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <img class="mx-2" style="width:18px" src="assets/image/flags/in.svg" alt="flag">
+                                        <span><strong>INR</strong></span>
+                                    </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="bg-light nav-link dropdown-toggle btn btn-outline-secondary px-0 ps-3 text-center d-flex align-items-center justify-content-center gap-2 border-0"
+                                href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <svg stroke="#000" class="pe-1" xmlns="http://www.w3.org/2000/svg" width="20"
+                                    height="20" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                                <strong class="m-0">
+                                    Account </strong>
+                                <svg stroke="#000" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                    viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M6 9l6 6 6-6" />
+                                </svg>
+                            </a>
+                            <ul class="dropdown-menu bg-white rounded-2">
+                                <li><a class="dropdown-item" href="login.html"> Login </i></a></li>
+                                <li><a class="dropdown-item" href="signup.html"> Signup</i></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="pt-5">
+        <form id="login" action="" method="post" class="mb-5">
+            <div class="container">
+                <div class="card card-style shadow-none mt-5 col-md-5 mx-auto">
+                    <div class="content mb-0 p-4">
+                        <h3><strong>Signup</strong></h3>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="firstname" placeholder=" " name="first_name"
+                                required="">
+                            <label for="firstname">First Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="last_name" placeholder=" " name="last_name"
+                                required="">
+                            <label for="last_name">Last Name</label>
+                        </div>
+                        <!-- /////////// -->
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating mb-3">
+                                    <div class="dropdown bootstrap-select border rounded-3 country w-100">
+                                        <select name="user[country_code]" class="country selectpicker w-100"
+                                            data-live-search="true" required="">
+                                            <option value="">Select Country
+                                            </option>
+                                            <option value="AF" data-content="<img src='assets/image/flags/af.svg' style='width: 20px; margin-right: 14px;color:#fff'><span class='text-dark'> Afghanistan 
+                            </span>">
+                                            </option>
+                                            <option value="AL" data-content="<img src='assets/image/flags/al.svg' style='width: 20px; margin-right: 14px;color:#fff'><span class='text-dark'> Albania 
+                            </span>">
+                                            </option>
+                                            <option value="DZ" data-content="<img src='assets/image/flags/dz.svg' style='width: 20px; margin-right: 14px;color:#fff'><span class='text-dark'> Algeria 
+                            </span>">
+                                            </option>
+                                            <option value="AS" data-content="<img src='assets/image/flags/as.svg' style='width: 20px; margin-right: 14px;color:#fff'><span class='text-dark'> American Samoa 
+                            </span>">
+                                            </option>
+                                            <option value="AD" data-content="<img src='assets/image/flags/ad.svg' style='width: 20px; margin-right: 14px;color:#fff'><span class='text-dark'> Andorra 
+                            </span>">
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-floating mb-3">
+                                    <input type="numbers" class="form-control" id="phone" placeholder=" " name="phone"
+                                        required="">
+                                    <label for="phone">Phone</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <script>
+                            $('.nationality option[value=US]').attr('selected',
+                                'selected');
+                            $('.country option[value=US]').attr('selected', 'selected');
+                        </script>
+                        <input type="hidden" class="" name="user[user_id]" value="">
+                        <style>
+                            .disabled {
+                                pointer-events: none !important
+                            }
+
+                            .disabled {
+                                background: #e9eef2 !important
+                            }
+                        </style>
+                        <!-- /////////// -->
+                        <div class="form-floating mb-3">
+                            <input name="email" type="email" class="form-control" id="email"
+                                placeholder="name@example.com">
+                            <label for="email">Email Address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input name="password" type="password" class="form-control" id="password"
+                                placeholder="******">
+                            <label for="password">Password</label>
+                        </div>
+                        <div class="btn-box pt-0 pb-2">
+                            <hr>
+
+                            <div class="login_button">
+                                <button id="submitBTN" style="height:44px" type="submit"
+                                    class="btn btn-danger w-100"><span class="">Signup</span></button>
+                            </div>
+                            <div class="mt-3 row text-center">
+                                <hr>
+                                <div
+                                    class="col-12 text-center bg-light py-3 d-flex align-items-center justify-content-center border rounded-2 d-grid w-100">
+                                    <button class="bg-light" id="btnGoogleSignIn"
+                                        style="border:none;background: none; width: 375px; max-width: 100%;">
+                                        <div class="d-flex justify-content-center align-items-center p-1 border rounded
+                                            google_signin bg-white">
+                                            <div>
+                                                <img src="assets/image/social_icone/google-icons.svg" alt="google"
+                                                    width="20" height="20">
+                                            </div>
+                                            <span class="d-grid w-100 ms-2 fs-6">Sign in with Google</span>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="container">
+        <div class="newsletter_section my-5" style="height:500px;">
+            <div class="p-4">
+                <div class="row py-5">
+                    <div class="col-md-6 col-lg-6"></div>
+                    <div class="col-md-6 col-lg-6 col-12">
+                        <div class="newsletter-section">
+                            <h3 class="mt-2 text-white">Newsletter</h3>
+                            <p class="mt-2 text-white">Subscribe and be the first to receive our exclusive offers.
+                            </p>
+                            <div class="d-md-flex gap-2">
+                                <div class="col-12 col-md-6">
+                                    <div class="form-floating mt-2">
+                                        <input type="text" placeholder=" " name="name" value=""
+                                            class="newsletter_name form-control">
+                                        <label for="">Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="form-floating mt-2">
+                                        <input type="text" placeholder=" " name="email" value=""
+                                            class="newsletter_email form-control w-100">
+                                        <label for="">Email</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="newsletter__pera">
+                                <p class="my-3 text-white">Subscribe now for exclusive offers and be the first to
+                                    receive exciting deals delivered right to your inbox!</p>
+                            </div>
+                            <div class="col-12 col-md-6 d-flex justify-content-center">
+                                <button class="subscribe btn btn-outline-danger py-3 border w-100 h-100">Signup
+                                    Newsletter</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-to-top" id="scrollToTopBtn">
+        <i class="fa-solid fa-2x fa-circle-arrow-up" style="color: #fa8c97;"></i> </div>
+
+    <section class="footer-area pt-5">
+        <div class="footer-wave">
+            <div class="wave-decoration">
+                <div class="wave02">
+                    <svg version="1.1" width="2000" height="131" fill="#dc3545" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2000 131.2"
+                        style="enable-background:new 0 0 2000 131.2;" xml:space="preserve">
+                        <style type="text/css">
+                            .st0 {
+                                opacity: 0.25;
+                                enable-background: new;
+                            }
+
+                            .st1 {
+                                opacity: 0.35;
+                                enable-background: new;
+                            }
+                        </style>
+                        <path class="st0"
+                            d="M-0.5,83.4c59.6,40.5,193.3,35,316.7-12.3C525.6-9.2,756.7-9.6,979.8,12.3s445.6,57.9,669.8,54.1C1821.1,63.5,1932,56,2000,53c0,36,0,76.4,0,76.4H1L-0.5,83.4z">
+                        </path>
+                        <path class="st1"
+                            d="M309.2,46.1c265.1-57.8,453.7-19.6,687.9,6.8c285.1,32.2,564.2,63,863.4,33.4c94-9.3,119.5-19.6,139.5-19c0,32.2,0,63,0,63H0v-66C0,64.3,152.7,80.2,309.2,46.1z">
+                        </path>
+                        <path class="st1"
+                            d="M344.5,54.9c82.3-26.3,167.2-46,253-36.5S767,51.6,851.9,67.8c272.3,52,522.5,16.7,819.3,5c90-3.5,293.8-13.6,328.8-12.6c0,24,0,71,0,71H-1v-59C-1,72.3,198.7,101.6,344.5,54.9z">
+                        </path>
+                        <path
+                            d="M1731.8,97.1c-289.3,18.5-590.4,17.2-873.9-16.8C746,66.9,641.1,42.1,528.5,39.5s-249.3,31-353.7,69.9c-57.5,21.4-164.7,2.3-175.7-4.7c0,8,0,26.5,0,26.5h2003v-58C2002,73.3,1854.2,89.2,1731.8,97.1z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid px-0">
+            <div class="featured featured_btns p-4 px-md-5">
+                <div class="row g-0">
+                    <div class="col-lg-3 responsive-column">
+                        <div class="footer-item">
+                            <div class="footer-logo padding-bottom-10px">
+                                <a href="#" class="foot__logo">
+                                    <img style="max-width: 150px;background:transparent"
+                                        src="assets/image/logo/logo.png" alt="logo"></a>
+                                </divface>
+
+                                <ul class="list-items pt-3">
+                                    <li><strong> +00-0000000 </strong></li>
+                                    <li><strong><a href="#"><span>email@xampale.com</span></a></strong>
+                                    </li>
+                                    <li><a href="#"><strong>Contact Us</strong></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-9 responsive-column">
+                        <ul class="foot_menu w-100">
+                            <li class="footm row w-100">
+                                <ul class="dropdown-menu-item row">
+                                    <li class="col-md-4"><a href="#">About us</a>
+                                    </li>
+                                    <li class="col-md-4"><a href="#">Contact us</a>
+                                    </li>
+                                    <li class="col-md-4"><a href="#">Terms of
+                                            Use</a> </li>
+                                    <li class="col-md-4"><a href="#">Cookies
+                                            Policy</a> </li>
+                                    <li class="col-md-4"><a href="#">Privacy
+                                            Policy</a> </li>
+                                    <li class="col-md-4"><a href="#">Become
+                                            a Supplier</a> </li>
+                                    <li class="col-md-4"><a href="#">FAQ</a> </li>
+                                    <li class="col-md-4"><a href="#">Booking
+                                            Tips</a> </li>
+                                    <li class="col-md-4"><a href="#">File a
+                                            Claim</a> </li>
+                                    <li class="col-md-4"><a href="#">Careers
+                                            and Jobs</a> </li>
+                                    <li class="col-md-4"><a href="#">How to
+                                            Book</a> </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="section-block mt-4"></div>
+                </div>
+
+                <div class="row align-items-center g-0 mt-4">
+                    <div class="col-lg-8">
+                        <div class="term-box footer-item">
+                            <ul class="list-items list--items d-flex align-items-center">
+                                All Rights Reserved by CODEWEBLO
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer-social-box float-end">
+                            <ul class="social-profile d-flex align-items-center">
+                                <!-- FACEBOOK -->
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <img src="assets/image/social_icone/facebook.svg">
+                                    </a>
+                                </li>
+                                <!-- TWITTER -->
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <img src="assets/image/social_icone/twitter.svg">
+                                    </a>
+                                </li>
+                                <!-- LINKEDIN -->
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <img src="assets/image/social_icone/linkedin.svg">
+                                    </a>
+                                </li>
+                                <!-- GOOGLE -->
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <img src="assets/image/social_icone/google.svg">
+                                    </a>
+                                </li>
+                                <!-- YOUTUBE -->
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <img src="assets/image/social_icone/youtube.svg">
+                                    </a>
+                                </li>
+                                <!-- WHATSAPP -->
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <img src="assets/image/social_icone/watsapp.svg">
+                                    </a>
+                                </li>
+                                <!-- INSTAGRAM -->
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <img src="assets/image/social_icone/instagram.svg">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4"></div>
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <div class="d-flex align-items-center justify-content-end my-4">
+                            <h6 class="w-100">
+                                <small>
+                                    <div class="text-center">Powered by &nbsp;<a href="#" target="_blank">
+                                            <img style="max-width:20px" src='assets/image/logo/favicon.png'
+                                                alt="codeweblo">
+                                            <strong>&nbsp;CODEWEBLO</strong></a> v01.0</div>
+                                </small>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<!-- Boostrap js  -->
+<script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="assets/js/select.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-3.4.1.js"
+    integrity="sha256-CfQXwuZDtzbBnpa5nhZmga8QAumxkrhOToWweU52T38=" crossorigin="anonymous"></script>
+<script src="assets/js/rangeSlider.js"></script>
+<script src="assets/js/costum.js"></script>
+
+</html>
